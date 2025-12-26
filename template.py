@@ -16,7 +16,7 @@ File_list = [".github/workflows/.gitkeep",
              f"source/{project_Name}/pipeline/__init__.py",
              f"source/{project_Name}/entity/__init__.py",
              f"source/{project_Name}/constants/__init__.py",
-             "config/config.yaml", "DVC.yaml", "Params.yaml", "requirements.txt", "setup.py", "research/trials.ipynb", "templates/index.html"]
+             "config/config.yaml", "dvc.yaml", "params.yaml", "requirements.txt", "setup.py", "research/trials.ipynb", "templates/index.html"]
 
 for filepath in File_list:
     filepath = Path(filepath)
