@@ -1,8 +1,8 @@
 AUGMENTATION: True
-IMAGE_SIZE: [224, 224, 3] # as per VGG 16 model
-BATCH_SIZE: 16
-INCLUDE_TOP: False
-EPOCHS: 1
-CLASSES: 2
-WEIGHTS: imagenet
+IMAGE_SIZE: [224, 224, 3] # as per VGG 16 model; will vary as per the model chosen
+BATCH_SIZE: 16 # Small batch size for local training
+INCLUDE_TOP: False # Remove the top FCC layer
+EPOCHS: 1 # Maybe increased for better training results in the future, here limiting for quick training
+CLASSES: 2 # Only 2 classes to classify into normal and tumor
+WEIGHTS: imagenet # Getting the pre-trained model
 LEARNING_RATE: 0.01
