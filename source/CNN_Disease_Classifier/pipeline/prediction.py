@@ -10,7 +10,8 @@ class PredictionPipeline:
 
     def predict(self):
         # load model
-        model = load_model(os.path.join("model", "model.h5"))
+        # Specify the location in which the model is situated
+        model = load_model(os.path.join("artifacts", "training", "model.h5"))
 
         imagename = self.filename
         test_image = image.load_img(imagename, target_size=(224, 224))
@@ -24,4 +25,5 @@ class PredictionPipeline:
             return [{"image": prediction}]
         else:
             prediction = 'Normal'
+
             return [{"image": prediction}]
